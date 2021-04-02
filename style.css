@@ -1,0 +1,64 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none; 
+}
+
+html {
+  font-size: 62,5%;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  
+}
+
+.logo {
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  
+}
+
+nav li {
+  padding: 0 25px;
+}
+
+nav li a {
+  color: #0065FC;
+}
+
+#subscription-bold {
+  font-weight: bold;
+}
+
+
+/*Search section*/ 
+
+.search {
+  padding: 10px 30px;
+}
+
+.search-title {
+  font-size: 1rem;
+}
+
+.search-subtitle {
+  font-size: 0.7rem;
+  padding: 0.5rem 0;
+}
+
+.search-wrap {
+  display: flex;
+  flex-direction: row;
+}
