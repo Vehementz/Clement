@@ -63,7 +63,6 @@ nav li a {
   flex-direction: row;
   height: 40px;
   margin: 10px 0;
-
 }
 
 
@@ -73,7 +72,6 @@ nav li a {
   background-color: rgb(182, 169, 169);
   width: 40px;
   border-radius: 25px 0 0 25px;
-  
 }
 
 .fa-map-marker-alt {
@@ -99,7 +97,88 @@ nav li a {
   padding: 10px;
 }
 
+.btn-search:hover {
+  cursor: pointer;
+}
+
 
 /* Filters */ 
+
+.filters {
+  display: flex;
+  margin: 30px 0 0 0;
+}
+
+.filters h3 {
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.filters a {
+  color: black;
+  text-decoration: none;
+}
+
+.filters-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn span {
+  margin-left: 10px;
+  margin: 10px
+}
+
+.btn:hover span {
+  text-decoration: #0065FC;
+}
+
+.btn i {
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  border: 1px solid #DEEBFF;
+  color: #0065FC;
+  font-size: 16px;
+  margin: -2px;
+  padding: 12px;
+}
+
+.btn {
+  padding: 0;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  height: 40px;
+  margin-bottom: 9px;
+  margin-left: 9px;
+}
+
+.btn:hover {
+  background-color: #0065FC;
+  color: white;
+  border: 2px solid #DEEBFF;
+}
+
+
+/* Infos */ 
+
+.description-filters {
+  margin: 5px 0 0 0;
+}
+
+.description-filters i {
+  color: white;
+  background-color: #0065FC;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+
+/* Lodgement section */ 
+
+
 
 
