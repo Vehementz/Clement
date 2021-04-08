@@ -61,4 +61,43 @@ nav li a {
 .search-wrap {
   display: flex;
   flex-direction: row;
+  height: 40px;
+  margin: 10px 0;
+
 }
+
+
+.btn-localisation {
+  position: relative;
+  border: none;
+  background-color: rgb(182, 169, 169);
+  width: 40px;
+  border-radius: 25px 0 0 25px;
+  
+}
+
+.fa-map-marker-alt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.input {
+  border: none;
+  padding: 0 10px;
+  width: 10rem;
+}
+
+.btn-search {
+  position: relative;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  background-color: #0065FC;
+  color: white;
+  padding: 10px;
+}
+
+
+/* Filters */ 
