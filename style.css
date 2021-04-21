@@ -5,6 +5,7 @@
   outline: none;
   text-decoration: none;
   list-style-type: none; 
+  color: inherit;
 }
 
 html {
@@ -177,6 +178,17 @@ nav li a {
 }
 
 
+/* Lodgement and popularity section */ 
+.wrap-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+
+
+
 /* Lodgement section */ 
 
 .lodgement-section {
@@ -189,7 +201,7 @@ nav li a {
   
 }
 
-.lodgement-title {
+.section-title {
   padding: 2rem 0 0.5rem 2rem;
 }
 
@@ -223,14 +235,22 @@ nav li a {
   border-radius: 25px 20px 0 0;
 }
 
+.lodgement-description {
+  margin: 0.1rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+
 .lodgement h3 {
   font-size: 0.8rem;
-  margin: 0.1rem 0.4rem;
+  /* margin: 0.1rem 0.4rem; */
 }
 
 .lodgement-price {
   font-size: 0.7rem;
-  margin: 0.1rem 0.4rem;
+  margin: 0.1rem 0;
 }
 
 .lodgement .fas {
@@ -242,9 +262,10 @@ nav li a {
   color: grey;
 }
 
+
 .lodgement-stars {
   font-size: 0.8rem;
-  margin: 0.1rem 0 0.4rem 0.4rem;
+  margin: 0.1rem 0 0.4rem 0;
   display: flex;
   flex-basis: 100%;
 }
@@ -256,5 +277,87 @@ nav li a {
   flex-basis: 100%;
 }
 
+
+
+/* Popularity  lodgement section */ 
+
+.popularity-section {
+  background-color: lightgray;
+  height:28rem;
+  width: 24rem;
+  margin: 0 2rem;
+  border-radius: 20px;
+  position: relative;
+}
+
+.popularity-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+
+.fa-chart-line {
+  margin: 1.5rem 2rem 0 0 ;
+  color: black;
+}
+
+.popularity-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 22rem;
+  width: 22rem;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+ 
+}
+
+.popularity-lodgement {
+
+  border-radius: 25px;
+  width: 95%;
+  height: 95%;
+  margin: 0.8rem;
+  background-color: white;
+  box-shadow: 0 0 10px 1px gray;
+  position: relative;
+  display: flex;
+  
+}
+
+.popularity-lodgement a {
+  display: flex;
+}
+
+.popularity-lodgement img {
+  display: flex;
+  order: 0;
+  width: 6rem;
+  height: 5.8rem;
+  border-radius: 25px 0 0 25px;
+  justify-content: center;
+  margin:  0.2rem 0.2rem;
+}
+
+.popularity-description {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 5rem;
+  width: 10rem;
+  margin-left: 0.2rem;
+}
+
+.popularity-lodgement .fas {
+  color: blue;
+  
+}
+
+.popularity-lodgement .far {
+  color: grey;
+}
 
 
