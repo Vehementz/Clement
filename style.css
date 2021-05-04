@@ -183,11 +183,8 @@ nav li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
+
 }
-
-
-
 
 /* Lodgement section */ 
 
@@ -195,7 +192,6 @@ nav li a {
   background-color: lightgray;
   height:28rem;
   width: 44rem;
-  margin: 0 2rem;
   border-radius: 20px;
   position: relative;
   
@@ -217,7 +213,7 @@ nav li a {
 .lodgement {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 25px;
+  border-radius: 20px;
   width: 30%;
   height: 5%;
   margin: 0.6rem;
@@ -226,14 +222,17 @@ nav li a {
 
 }
 
+
+
 .lodgement img {
-  width: 95%;
+  width: 12rem;
   height: 5rem;
   display: flex;
-  justify-content: center;
-  margin:  0.3rem auto;
-  border-radius: 25px 20px 0 0;
+  margin: 0.3rem;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
+
 
 .lodgement-description {
   margin: 0.1rem 0.6rem;
@@ -243,9 +242,9 @@ nav li a {
 }
 
 
-.lodgement h3 {
+.lodgement-description h3 {
   font-size: 0.8rem;
-  /* margin: 0.1rem 0.4rem; */
+  
 }
 
 .lodgement-price {
@@ -334,11 +333,13 @@ nav li a {
 .popularity-lodgement img {
   display: flex;
   order: 0;
-  width: 6rem;
+  width: 7rem;
   height: 5.8rem;
   border-radius: 25px 0 0 25px;
   justify-content: center;
-  margin:  0.2rem 0.2rem;
+  margin: 0.2rem 0.2rem;
+  
+
 }
 
 .popularity-description {
@@ -346,18 +347,101 @@ nav li a {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 5rem;
-  width: 10rem;
   margin-left: 0.2rem;
 }
 
-.popularity-lodgement .fas {
+.popularity-description h3 {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.popularity-stars {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 0.5rem;
+  
+}
+
+
+
+.popularity-stars .fas {
   color: blue;
   
 }
 
-.popularity-lodgement .far {
+.popularity-stars .far {
   color: grey;
 }
 
+
+/* Activity */ 
+
+
+
+
+.marseille-title {
+ margin: 1rem 0 0 1rem;
+}
+
+.activity-wrap {
+
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: repeat(8, 1.5rem);
+  margin: 1rem 2rem 1rem 2rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  
+}
+
+
+.activity-card {
+  margin: 0.5rem;
+}
+
+
+.activity-card img {
+  border-top-left-radius: 15px;  
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  
+}
+
+
+.activity-card h3 {
+  font-size: 0.9rem;
+  border-radius: 0 0 15px 15px;
+  padding: 1rem 0 1rem 1rem;
+  box-shadow: 0 0 20px #0000002e;
+  margin: -0.3rem 0 0 0;
+}
+
+
+
+.card-1 {
+ grid-area: 1 / 1 / 10 / 2;
+}
+
+.card-2 {
+ grid-area: 1 / 2 / 5 / 3; 
+
+}
+.card-3 {
+  grid-area: 6 / 2 / 9 / 3;
+} 
+
+.card-4 {
+ grid-area: 1 / 3 / 10 / 4;
+
+}
+
+.card-5 {
+  grid-area: 1 / 4 / 5 / 5;
+}
+
+.card-6 {
+  grid-area: 5 / 4 / 9 / 5;
+}
 
