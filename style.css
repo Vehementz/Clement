@@ -17,14 +17,15 @@ html {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
   
 }
 
 .logo {
   cursor: pointer;
+  padding: 2rem 3rem;
 }
+
+
 
 nav ul {
   display: flex;
@@ -32,7 +33,7 @@ nav ul {
 }
 
 nav li {
-  padding: 0 25px;
+  padding: 2rem 2.5rem;
 }
 
 nav li a {
@@ -42,6 +43,90 @@ nav li a {
 #subscription-bold {
   font-weight: bold;
 }
+
+
+#activity-grey a {
+  color: #000;
+}
+
+#border-blue {
+  font-weight: bold;
+  border-width: 2px;
+  padding-left: 2rem;
+  border-top-style: solid;
+  border-top-color: #0065fc;
+  transition: all 0.5s ease;
+}
+
+
+
+@media (max-width: 750px) {
+
+
+  .logo {
+    padding: 2rem 2rem;
+  }
+  
+
+}
+
+@media (max-width: 650px) {
+
+  .logo {
+    padding: 1rem 3rem;
+  }
+
+  
+  nav li {
+    padding: 2rem 1rem;
+  }
+
+}
+
+
+@media (max-width: 560px) {
+  .logo { 
+    padding: 0.5rem 1.5rem;
+
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+
+
+  
+/*   
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  
+
+  .logo {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  #subscription-bold {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  #border-blue {
+    grid-area: 2 / 1 / 3 / 2;
+    border-top: none;
+  }
+
+  #activity-grey {
+    grid-area: 2 / 2 / 3 / 3;
+  } */
+
+  
+}
+
 
 
 /*Search section*/ 
@@ -72,7 +157,7 @@ nav li a {
   border: none;
   background-color: rgb(182, 169, 169);
   width: 40px;
-  border-radius: 25px 0 0 25px;
+  border-radius: 15px 0 0 15px;
 }
 
 .fa-map-marker-alt {
@@ -91,7 +176,7 @@ nav li a {
 
 .btn-search {
   position: relative;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 15px 15px 0;
   border: none;
   background-color: #0065FC;
   color: white;
@@ -182,20 +267,26 @@ nav li a {
 .wrap-section {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
 
 }
 
+
+
+
 /* Lodgement section */ 
 
 .lodgement-section {
-  background-color: lightgray;
+  background-color: #F2F2F2;
   height:28rem;
-  width: 44rem;
+  width: 55%;
   border-radius: 20px;
   position: relative;
   
 }
+
+
 
 .section-title {
   padding: 2rem 0 0.5rem 2rem;
@@ -215,22 +306,24 @@ nav li a {
   flex-wrap: wrap;
   border-radius: 20px;
   width: 30%;
-  height: 5%;
+  height: 9.5rem;
   margin: 0.6rem;
   background-color: white;
   box-shadow: 0 0 10px 1px gray;
+  position: relative;
 
 }
 
 
 
 .lodgement img {
-  width: 12rem;
+  width: 97%;
   height: 5rem;
-  display: flex;
+  display: inline-block;
   margin: 0.3rem;
   border-radius: 20px 20px 0 0;
-  object-fit: cover;
+  object-fit: fill;
+  text-align: center;
 }
 
 
@@ -264,7 +357,8 @@ nav li a {
 
 .lodgement-stars {
   font-size: 0.8rem;
-  margin: 0.1rem 0 0.4rem 0;
+  position: absolute;
+  bottom: 0.5rem;
   display: flex;
   flex-basis: 100%;
 }
@@ -276,14 +370,87 @@ nav li a {
   flex-basis: 100%;
 }
 
+/* lodgement media queries */ 
+
+@media (max-width: 1250px) {
+  .lodgement-section {
+    order: 2;
+  }
+
+  .lodgement-section {
+    width: 95%;
+    margin-top: 3rem;
+  }
+
+ 
+
+ }
+
+@media (max-width: 770px) {
+
+  .lodgement-section {
+    height: 100%;
+  }
+
+  .lodgement {
+    width: 40%;
+    height: 11rem;
+  }
+
+  .lodgement-description h3 {
+    font-size: 1.2rem;
+  }
+  .lodgement-price {
+    font-size: 0.8rem;
+  }
+
+ }
+
+@media (max-width: 600px) {
+   
+.lodgement {
+  height: 12rem;
+  
+}
+
+}
+
+@media (max-width: 560px) {
+
+.lodgement-section {
+  width: 80%;
+}
+
+.lodgement {
+  width: 85%;
+  height: 14rem;
+}
+
+.lodgement img {
+  height: 8rem;
+}
+
+}
+
+
+
+@media (max-width: 380px) {
+
+.lodgement-section {
+  width: 100%;
+  border-radius: 0;
+}
+
+
+ }
 
 
 /* Popularity  lodgement section */ 
 
 .popularity-section {
-  background-color: lightgray;
+  background-color: #F2F2F2;
   height:28rem;
-  width: 24rem;
+  width: 30%;
   margin: 0 2rem;
   border-radius: 20px;
   position: relative;
@@ -306,40 +473,35 @@ nav li a {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 22rem;
-  width: 22rem;
   justify-content: space-evenly;
   margin: 1rem auto;
- 
 }
 
 .popularity-lodgement {
-
+  display: flex; 
   border-radius: 25px;
-  width: 95%;
+  width: 85%;
   height: 95%;
-  margin: 0.8rem;
+  margin: 0.8rem auto;
   background-color: white;
   box-shadow: 0 0 10px 1px gray;
   position: relative;
-  display: flex;
   
 }
 
 .popularity-lodgement a {
   display: flex;
+  
 }
 
 .popularity-lodgement img {
   display: flex;
   order: 0;
   width: 7rem;
-  height: 5.8rem;
+  height: 5.5rem;
   border-radius: 25px 0 0 25px;
   justify-content: center;
   margin: 0.2rem 0.2rem;
-  
-
 }
 
 .popularity-description {
@@ -373,6 +535,129 @@ nav li a {
   color: grey;
 }
 
+/* Popularity media queries */ 
+
+
+@media (max-width: 1250px) {
+
+  .popularity-section {
+    order: 1;
+    width: 100%;
+    height: 100%;
+    
+  }
+    
+  .popularity-wrap {
+    flex-direction: row;
+  }
+  
+  .popularity-lodgement {
+    height: 8rem;
+    width: 30%;
+  
+  }
+  .popularity-lodgement img {
+    height: 8rem;
+  }
+  
+  }
+
+
+  @media (max-width: 770px) {
+    
+  .popularity-title { 
+    margin-left: 3rem;
+  }
+
+  .popularity-wrap {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+    
+    }
+    
+  .popularity-lodgement {
+    width: 80%;
+    height: 10rem;
+  }
+
+  .popularity-lodgement img {
+    width: 14rem;
+    height: 10rem;
+  }
+
+  .popularity-description h3 {
+    font-size: 1.2rem;
+  }
+
+  .lodgement-price {
+    font-size: 1.2rem;
+  
+  }
+  
+  }
+
+
+
+@media (max-width: 600px) {
+
+.popularity-lodgement img {
+  width: 9rem;
+}
+
+.popularity-title { 
+  margin-left: 2rem;
+}
+
+}
+
+
+
+@media (max-width: 450px) {
+
+
+  .popularity-description h3 {
+    font-size: 1rem;
+  }
+
+  .lodgement-price {
+    font-size: 1rem;
+  
+  }
+
+  .popularity-title { 
+    margin-left: 1rem;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  .popularity-section {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .popularity-lodgement img {
+    width: 8rem;
+  }
+
+
+  .popularity-description h3 {
+    font-size: 0.8rem;
+  }
+
+  .lodgement-price {
+    font-size: 0.7rem;
+  
+  }
+
+ 
+}
+  
+
 
 /* Activity */ 
 
@@ -384,14 +669,16 @@ nav li a {
 }
 
 .activity-wrap {
-
+  
   display: grid;
   grid-template-columns: repeat(4, 23%);
-  grid-template-rows: repeat(8, 1.5rem);
-  margin: 1rem 2rem 1rem 2rem;
+  grid-template-rows: repeat(8, 0.2rem);
+  margin: 1rem 2rem;
   grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  
+  grid-row-gap: 3rem;
+  justify-content: space-between;
+
+
 }
 
 
@@ -404,7 +691,7 @@ nav li a {
   border-top-left-radius: 15px;  
   border-top-right-radius: 15px;
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
   
 }
@@ -421,11 +708,11 @@ nav li a {
 
 
 .card-1 {
- grid-area: 1 / 1 / 10 / 2;
+ grid-area: 1 / 1 / 9 / 2;
 }
 
 .card-2 {
- grid-area: 1 / 2 / 5 / 3; 
+ grid-area: 1 / 2 / 6 / 3; 
 
 }
 .card-3 {
@@ -433,7 +720,7 @@ nav li a {
 } 
 
 .card-4 {
- grid-area: 1 / 3 / 10 / 4;
+ grid-area: 1 / 3 / 9 / 4;
 
 }
 
@@ -445,3 +732,166 @@ nav li a {
   grid-area: 5 / 4 / 9 / 5;
 }
 
+
+/* activity media queries */ 
+
+
+@media (max-width: 800px) {
+  
+ .activity-wrap {
+
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(2, 12rem);
+
+ }
+  
+ .card-1 {
+  grid-area: 1 / 1 / 2 / 2;
+ }
+ 
+ .card-2 {
+  grid-area: 1 / 2 / 2 / 3; 
+ 
+ }
+ .card-3 {
+   grid-area: 1 / 3 / 2 / 4;
+ }
+ 
+ .card-4 {
+  grid-area: 2 / 1 / 3 / 2; 
+ 
+ }
+ 
+ .card-5 {
+   grid-area: 2 / 2 / 3 / 3;
+ }
+
+ .card-6 {
+   grid-area: 2 / 3 / 3 / 3;
+ }
+ 
+
+
+}
+
+
+
+@media (max-width: 630px) {
+  
+.activity-wrap {
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 12rem);
+}
+
+.card-1 {
+  grid-area: 1 / 1 / 2 / 2;
+ }
+ 
+ .card-2 {
+  grid-area: 1 / 2 / 2 / 3; 
+ 
+ }
+ .card-3 {
+   grid-area: 2 / 1 / 3 / 2;
+ }
+ 
+ .card-4 {
+  grid-area: 2 / 2 / 3 / 3; 
+ 
+ }
+ 
+ .card-5 {
+   grid-area: 3 / 1 / 4 / 2;
+ }
+
+ .card-6 {
+   grid-area: 3 / 2 / 4 / 3;
+ }
+
+
+}
+
+
+@media (max-width: 380px) {
+
+  .activity-wrap {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(6, 12rem);
+  }
+  
+  .card-1 {
+    grid-area: 1 / 1 / 2 / 2;
+   }
+   
+   .card-2 {
+    grid-area: 2 / 1 / 3 / 2; 
+   
+   }
+   .card-3 {
+     grid-area: 3 / 1 / 4 / 2;
+   }
+   
+   .card-4 {
+    grid-area: 4 / 1 / 5 / 2; 
+   
+   }
+   
+   .card-5 {
+     grid-area: 5 / 1 / 6 / 2;
+   }
+  
+   .card-6 {
+     grid-area: 6 / 1 / 7 / 2;
+   }
+
+}
+
+
+/* Footer */ 
+
+footer {
+  margin-top: 7rem;
+  background: #F2F2F2;
+}
+
+.contenu-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem 0;
+  color: black;
+  
+}
+
+.footer-bloc {
+  margin-top: 2.5rem;
+  
+  
+}
+
+footer h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.list {
+  line-height: 2rem;
+}
+
+
+@media (max-width: 770px) {
+.contenu-footer {
+    flex-direction: row;
+    flex: 1 0 auto;
+    margin-left: 5rem;
+    height: 100%;
+}
+
+}
+
+
+@media (max-width: 670px) { 
+  .contenu-footer {
+    flex-direction: column;
+  }
+}
