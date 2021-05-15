@@ -550,6 +550,17 @@ nav li a {
 
 }
 
+@media (max-width: 425px) {
+
+  .lodgement {
+    width: 18rem;
+  }
+
+  .lodgement img {
+    width: 17.5rem;
+  }
+ }
+
 
 
 @media (max-width: 380px) {
@@ -562,16 +573,6 @@ nav li a {
 
  }
 
- @media (max-width: 425px) {
-
-  .lodgement {
-    width: 18rem;
-  }
-
-  .lodgement img {
-    width: 17.5rem;
-  }
- }
 
 
 /* Popularity  lodgement section */ 
@@ -708,7 +709,7 @@ nav li a {
     align-items: center;
     
     
-    }
+  }
     
   .popularity-lodgement {
     width: 80%;
