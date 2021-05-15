@@ -18,17 +18,20 @@ header {
   display: flex;
   justify-content: space-between;
   
+  
 }
 
 .logo {
   cursor: pointer;
-  padding: 2rem 3rem;
+  margin: 2rem 0 2rem 3rem;
 }
 
 
 
 nav ul {
   display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
   
 }
 
@@ -55,7 +58,6 @@ nav li a {
   padding-left: 2rem;
   border-top-style: solid;
   border-top-color: #0065fc;
-  transition: all 0.5s ease;
 }
 
 
@@ -64,7 +66,7 @@ nav li a {
 
 
   .logo {
-    padding: 2rem 2rem;
+    margin: 2rem 2rem;
   }
   
 
@@ -73,7 +75,7 @@ nav li a {
 @media (max-width: 650px) {
 
   .logo {
-    padding: 1rem 3rem;
+    margin: 1rem 3rem;
   }
 
   
@@ -86,7 +88,7 @@ nav li a {
 
 @media (max-width: 560px) {
   .logo { 
-    padding: 0.5rem 1.5rem;
+    margin: 0.5rem 1.5rem;
 
   }
 
@@ -95,39 +97,69 @@ nav li a {
 
 @media (max-width: 500px) {
 
-
-
-  
-/*   
-  header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  
-
   .logo {
-    grid-area: 1 / 1 / 2 / 2;
+    height: 3rem;
+    width: auto;
+    padding: 0;
   }
+
+  nav ul {
+    
+    padding-top: 0;
+    
+  }
+
 
   #subscription-bold {
-    grid-area: 1 / 2 / 2 / 3;
+    margin-left: 10rem;
+    padding-top: 0;
+    margin: -2rem 0 0 0;
+    position: relative;
+    right: -18rem;
+    
+  }
+  
+  #activity-grey {
+  border-bottom: 2px solid gray;
+  flex: 1 0 50%;
+  padding-left: 4rem; 
+
   }
 
   #border-blue {
-    grid-area: 2 / 1 / 3 / 2;
     border-top: none;
+    border-bottom: 2px solid #0065FC;
+    padding-right: 0rem;
+    flex: 1 0 50%;
+  
   }
 
-  #activity-grey {
-    grid-area: 2 / 2 / 3 / 3;
-  } */
+  header {
+    display: inline;
+  }
+
+  nav li {
+    padding: 1rem 1rem;
+  }
 
   
 }
 
+@media (max-width: 380px) {
+  #subscription-bold {
+    position: relative;
+    left: 15rem;
+  }
 
+}
+
+@media (max-width: 340px) {
+    #subscription-bold {
+      position: relative;
+      left: 12rem;
+    }
+
+}
 
 /*Search section*/ 
 
@@ -148,7 +180,7 @@ nav li a {
   display: flex;
   flex-direction: row;
   height: 40px;
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 
 
@@ -156,8 +188,9 @@ nav li a {
   position: relative;
   border: none;
   background-color: rgb(182, 169, 169);
-  width: 40px;
-  border-radius: 15px 0 0 15px;
+  width: 3rem;
+  border-radius: 10px 0 0 10px;
+  
 }
 
 .fa-map-marker-alt {
@@ -243,10 +276,16 @@ nav li a {
 }
 
 .btn:hover {
-  background-color: #0065FC;
-  color: white;
+  background-color: #DEEBFF ;
+  color: black;
   border: 2px solid #DEEBFF;
 }
+
+.fa-search {
+  visibility: collapse;
+}
+
+
 
 
 /* Infos */ 
@@ -263,6 +302,31 @@ nav li a {
 }
 
 
+
+@media (max-width: 380px) {
+.fa-search {
+  visibility: visible;
+  position: relative;
+  border-radius: 8px 8px 8px 8px;
+  border: none;
+  background-color: #0065FC;
+  color: white;
+  padding: 10px;
+}
+
+.btn-search {
+  visibility: collapse;
+}
+
+.btn-localisation {
+  width: 2rem;
+  flex-shrink: 0;
+  
+}
+
+
+}
+
 /* Lodgement and popularity section */ 
 .wrap-section {
   display: flex;
@@ -271,7 +335,6 @@ nav li a {
   justify-content: space-evenly;
 
 }
-
 
 
 
@@ -314,7 +377,9 @@ nav li a {
 
 }
 
-
+.lodgement:hover {
+  transform: scale(1.05);
+}
 
 .lodgement img {
   width: 97%;
@@ -346,7 +411,7 @@ nav li a {
 }
 
 .lodgement .fas {
-  color: blue;
+  color:#0065FC;
   
 }
 
@@ -494,6 +559,10 @@ nav li a {
   
 }
 
+.popularity-lodgement:hover {
+  transform: scale(1.05);
+}
+
 .popularity-lodgement img {
   display: flex;
   order: 0;
@@ -527,7 +596,7 @@ nav li a {
 
 
 .popularity-stars .fas {
-  color: blue;
+  color:#0065FC;
   
 }
 
@@ -696,6 +765,10 @@ nav li a {
   
 }
 
+
+.activity-card:hover {
+  transform: scale(1.05);
+}
 
 .activity-card h3 {
   font-size: 0.9rem;
@@ -876,6 +949,10 @@ footer h4 {
 
 .list {
   line-height: 2rem;
+}
+
+.list li:hover {
+  text-decoration: underline;
 }
 
 
