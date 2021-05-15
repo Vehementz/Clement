@@ -368,7 +368,7 @@ nav li a {
   display: flex;
   flex-wrap: wrap;
   border-radius: 20px;
-  width: 14rem;
+  width: 30%;
   height: 9.5rem;
   margin: 0.6rem;
   background-color: white;
@@ -382,7 +382,7 @@ nav li a {
 }
 
 .lodgement img {
-  width: 13.5rem;
+  width: 97%;
   height: 5rem;
   display: inline-block;
   margin: 0.3rem;
@@ -437,30 +437,7 @@ nav li a {
 
 /* lodgement media queries */ 
 
-@media (max-width: 1400px) {
-   
-.lodgement {
-  width: 12rem; 
-}
-
-.lodgement img {
-  width: 11.5rem;
-}
-
-}
-
-
-
 @media (max-width: 1250px) {
-
-  .lodgement {
-    width: 18rem; 
-  }
-  
-  .lodgement img {
-    width: 17.5rem;
-  }
-
   .lodgement-section {
     order: 2;
   }
@@ -470,31 +447,9 @@ nav li a {
     margin-top: 3rem;
   }
 
+ 
+
  }
-
-@media (max-width: 1050px) {
-
-  .lodgement {
-    width: 14rem;
-  }
-
-  .lodgement img {
-    width: 13.5rem;
-  }
-
-}
-
-
-@media (max-width: 850px) {
-
-  .lodgement {
-    width: 12rem;
-  }
-
-  .lodgement img {
-    width: 11.5rem;
-  }
-}
 
 @media (max-width: 770px) {
 
@@ -503,12 +458,8 @@ nav li a {
   }
 
   .lodgement {
-    width: 15rem;
+    width: 40%;
     height: 11rem;
-  }
-
-  .lodgement img {
-    width: 14.5rem;
   }
 
   .lodgement-description h3 {
@@ -519,9 +470,6 @@ nav li a {
   }
 
  }
-
-
-
 
 @media (max-width: 600px) {
    
@@ -539,12 +487,11 @@ nav li a {
 }
 
 .lodgement {
-  width: 20rem;
+  width: 85%;
   height: 14rem;
 }
 
 .lodgement img {
-  width: 19.5rem;
   height: 8rem;
 }
 
@@ -560,17 +507,6 @@ nav li a {
 }
 
 
- }
-
- @media (max-width: 425px) {
-
-  .lodgement {
-    width: 18rem;
-  }
-
-  .lodgement img {
-    width: 17.5rem;
-  }
  }
 
 
@@ -830,7 +766,7 @@ nav li a {
 }
 
 
-.activity-card:hover {
+.activity-card img:hover {
   transform: scale(1.05);
 }
 
