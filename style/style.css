@@ -416,7 +416,7 @@ nav li a {
 
 .lodgement-section {
   background-color: #F2F2F2;
-  height:45rem;
+  height:47rem;
   width: 61%;
   border-radius: 20px;
   position: relative;
@@ -441,10 +441,9 @@ nav li a {
 
 .lodgement {
   display: flex;
-  flex-wrap: wrap;
   border-radius: 20px;
   width: 30%;
-  height: 15rem;
+  height: 16rem;
   margin: 1.7rem 1rem;
   background-color: white;
   box-shadow: 0 0 10px 1px gray;
@@ -460,12 +459,11 @@ nav li a {
 .lodgement img {
   width: 100%;
   height: 8.5rem;
-  display: inline-block;
-  margin: 0.3rem;
+  margin: 0.3rem 0.3rem 0 0.3rem;
   border-radius: 20px 20px 0 0;
   text-align: center;
 
-}
+} 
 
 
 .lodgement-description {
@@ -512,6 +510,9 @@ nav li a {
   flex-basis: 100%;
 }
 
+
+
+
 /* lodgement media queries */ 
 
 @media (max-width: 1400px) {
@@ -521,7 +522,7 @@ nav li a {
 }
 
 .lodgement img {
-  width: 19.5rem;
+  width: 99%;
 }
 
 }
@@ -530,33 +531,30 @@ nav li a {
 
 @media (max-width: 1250px) {
 
-  .lodgement {
-    width: 18rem; 
-  }
-  
-  .lodgement img {
-    width: 17.5rem;
-  }
-
   .lodgement-section {
     order: 2;
-  }
-
-  .lodgement-section {
-    width: 95%;
+    width: 96%;
     margin-top: 3rem;
   }
 
+  .lodgement-wrap {
+    position: absolute;
+    /* left: -4rem; */
+  }
+
+  .lodgement {
+    width: 31%;
+
+  }
+  
+
+  
  }
 
 @media (max-width: 1050px) {
 
   .lodgement {
-    width: 14rem;
-  }
-
-  .lodgement img {
-    width: 13.5rem;
+    width: 31%;
   }
 
 }
@@ -568,9 +566,6 @@ nav li a {
     width: 12rem;
   }
 
-  .lodgement img {
-    width: 11.5rem;
-  }
 }
 
 @media (max-width: 770px) {
@@ -609,10 +604,11 @@ nav li a {
 
 }
 
-@media (max-width: 560px) {
+@media (max-width: 570px) {
 
 .lodgement-section {
-  width: 80%;
+  width: 100%;
+  border-radius: 0;
 }
 
 .lodgement {
@@ -644,7 +640,6 @@ nav li a {
 
 .lodgement-section {
   width: 100%;
-  border-radius: 0;
 }
 
 
@@ -757,7 +752,7 @@ nav li a {
 
   .popularity-section {
     order: 1;
-    width: 100%;
+    width: 96%;
     height: 100%;
     
   }
@@ -815,7 +810,18 @@ nav li a {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 570px) {
+
+.popularity-section {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+.popularity-lodgement {
+  box-shadow: none;
+  width: 95%;
+}
 
 .popularity-lodgement img {
   width: 9rem;
@@ -849,11 +855,7 @@ nav li a {
 
 @media (max-width: 380px) {
 
-  .popularity-section {
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-  }
+ 
   
   .popularity-lodgement img {
     width: 8rem;
