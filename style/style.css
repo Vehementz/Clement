@@ -184,6 +184,7 @@ nav li a {
   border-left: none;
   width: 13rem;
   color: black;
+  padding-left: 2rem;
  
   
 }
@@ -195,7 +196,7 @@ nav li a {
   border: none;
   background-color: #0065FC;
   color: white;
-  padding: 10px;
+  padding: 10px;  
   
 }
 
@@ -294,7 +295,7 @@ nav li a {
 
   .input {
     width: 20rem;
-    padding-left: 2rem;
+    
   }
 
 }
@@ -325,6 +326,10 @@ nav li a {
   color: white;
   padding: 10px;
   margin-left: -1rem;
+}
+
+.fa-search:hover { 
+  cursor: pointer;
 }
 
 .btn-search {
