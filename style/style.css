@@ -13,6 +13,8 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+/* Begin of nav section */
+
 
 header {
   display: flex;
@@ -139,11 +141,15 @@ nav li a {
 }
 
 
-/*Search section*/ 
+/* End of nav section */
+
+
+/*Begin of Search section*/ 
 
 .search-section {
   margin: 1rem 3rem;
 }
+
 
 .search-title {
   font-size: 1.5rem;
@@ -203,6 +209,54 @@ nav li a {
 .btn-search:hover {
   cursor: pointer;
 }
+
+.fa-search {
+  visibility: collapse;
+}
+  
+
+@media (max-width: 576px) {
+  .search-section {
+    margin: 1rem 1.5rem;
+  }
+
+  .input {
+    width: 20rem;
+    
+  }
+  
+}
+@media (max-width: 380px) {
+  .fa-search {
+    visibility: visible;
+    position: relative;
+    border-radius: 8px 8px 8px 8px;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    padding: 10px;
+    margin-left: -1rem;
+  }
+  
+  .fa-search:hover { 
+    cursor: pointer;
+  }
+  
+  .btn-search {
+    visibility: collapse;
+  }
+  
+  .btn-localisation {
+    width: 3rem;
+    flex-shrink: 0;
+    
+  }
+  }
+
+
+
+
+/* End of Search section*/ 
 
 
 /* Filters */ 
@@ -270,10 +324,7 @@ nav li a {
   border: 2px solid transparent;
 }
 
-.fa-search {
-  visibility: collapse;
-}
-  
+
 
 .filter-title {
   margin: 1rem 1rem 1rem 0;
@@ -288,19 +339,17 @@ nav li a {
    }
 }
 
-@media (max-width: 576px) {
-  .search-section {
-    margin: 1rem 1.5rem;
-  }
-
-  .input {
-    width: 20rem;
-    
+@media (max-width: 380px) {
+  
+  .description-filters i {
+    margin-left: 0;
   }
 
 }
 
-/* Infos */ 
+
+
+/* Begin infos */ 
 
 .description-filters {
   font-size: 1.1rem;
@@ -314,53 +363,42 @@ nav li a {
   margin-right: 1rem;
 }
 
+/* End of Infos */
 
 
-@media (max-width: 380px) {
-.fa-search {
-  visibility: visible;
-  position: relative;
-  border-radius: 8px 8px 8px 8px;
-  border: none;
-  background-color: #0065FC;
-  color: white;
-  padding: 10px;
-  margin-left: -1rem;
-}
-
-.fa-search:hover { 
-  cursor: pointer;
-}
-
-.btn-search {
-  visibility: collapse;
-}
-
-.btn-localisation {
-  width: 3rem;
-  flex-shrink: 0;
-  
-}
-
-.description-filters i {
-  margin-left: 0;
-}
-
-}
-
-/* Lodgement and popularity section */ 
+/* Wrap of "hebegerments à marseille" and "les plus populaires" section */ 
 .wrap-section {
   display: grid;
   grid-template-columns: 62% 35%;
   grid-row: 1;
   justify-content: space-between;
-  
+}
+
+
+@media (max-width: 1250px) {
+
+  .wrap-section {
+    grid-template-columns: 98%;
+    justify-content: center;
+  }
 
 }
 
 
+@media (max-width: 380px) {
 
-/* Lodgement section */ 
+  .wrap-section {
+    grid-template-columns: 98%;
+    justify-content: center;
+  }
+
+}
+
+
+/* End Wrap of "hebegerments à marseille" and "les plus populaires" section */ 
+
+
+/* Begin "hebergements à marseille" section */ 
 
 .lodgement-section {
   background-color: #F2F2F2;
@@ -534,15 +572,15 @@ nav li a {
 
   .lodgement-wrap {
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(6, 40%);
+    grid-template-rows: repeat(6, 40%); 
     margin-left: 1rem;
-    
+    justify-content: center;
 
   }
 
   .lodgement {
-    box-shadow: none;
-    width: 94%;
+    box-shadow: 0px 0px 6px 0px #0000003b;
+    width: 95%;
    
   }
 
@@ -558,17 +596,27 @@ nav li a {
     margin-left: 1rem;
   }
 
-  
-
 }
 
 
-/* Popularity  lodgement section */ 
+@media (max-width: 380px) { 
+
+  .lodgement-wrap {
+    margin: 0 0 0 0;
+    position: absolute;
+    left: 1rem;
+
+  }
+
+}
+
+/* End "Hébergements à Marseille" section */ 
+
+
+/* Begin "Les plus populaires" section */ 
 
 .popularity-section {
   background-color: #F2F2F2;
-  /* height:47rem;
-  width: 34%; */
   border-radius: 20px;
   position: relative;
   margin-right: 2rem;
@@ -658,17 +706,12 @@ nav li a {
   color: grey;
 }
 
-/* Popularity media queries */ 
+/* "Les plus populaires" media queries */ 
 
 
 @media (max-width: 1250px) {
 
-  .wrap-section {
-    grid-template-columns: 100%;
-    justify-content: center;
-  }
-
-
+  
   .popularity-section {
     width: 100%;
     height: 100%;
@@ -717,12 +760,19 @@ nav li a {
   .popularity-title {
     font-size: 1.8rem;
     margin: 2rem 0 1rem 2rem;
+    box-shadow: 0px 0px 6px 0px #0000003b;
   }
 
 }
+/* End "Les plus populaires" section */ 
 
+/* Begin "Activités à Marseille" section */ 
 
-/* Activity */ 
+.activity-section {
+  width: 100%;
+  padding-top: 2rem;
+}
+
 
 .marseille-title {
  font-size: 1.8rem;
@@ -752,7 +802,6 @@ nav li a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
 
 
@@ -920,19 +969,17 @@ nav li a {
 
 
 
+/* End "Activités à Marseille" section */ 
 
 
 
-
-
-
-/* Footer */ 
+/* Begin Footer */ 
 
 footer {
   margin-top: 7rem;
   background: #F2F2F2;
-  height: 100%;
   padding-bottom: 3rem;
+  
 }
 
 .contenu-footer {
@@ -997,3 +1044,6 @@ footer h2 {
   }
 
 }
+
+
+/* End Footer */ 
