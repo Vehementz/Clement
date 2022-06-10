@@ -420,7 +420,7 @@ nav li a {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: repeat(2, 40%);
-  height: 40rem;
+  height: 45rem;
   column-gap: 2rem;
   row-gap: 2rem;
   align-content: space-between;
@@ -435,6 +435,7 @@ nav li a {
   background-color: white;
   box-shadow: 0 0 10px 1px gray;
   position: relative;
+  transition: all 0.3s ease-in-out;
   
   
 
@@ -446,10 +447,11 @@ nav li a {
 
 .lodgement img {
   width: 98%;
-  height: 10rem;
+  height: 12rem;
   margin: 0.3rem 0.3rem 0 0.3rem;
   border-radius: 20px 20px 0 0;
   text-align: center;
+  object-fit: fill;
 
 } 
 
@@ -561,7 +563,7 @@ nav li a {
 
 
   .lodgement-section {
-    height: 120rem;
+    height: 130rem;
     background-color: white;
   }
 
@@ -575,6 +577,7 @@ nav li a {
     grid-template-rows: repeat(6, 40%); 
     margin-left: 1rem;
     justify-content: center;
+    margin-bottom: 8rem;
 
   }
 
@@ -593,6 +596,7 @@ nav li a {
   }
   
   .lodgement-more {
+    /* padding-top: 4rem; */
     margin-left: 1rem;
   }
 
@@ -656,6 +660,7 @@ nav li a {
   background-color: white;
   box-shadow: 0 0 10px 1px gray;
   position: relative;
+  transition: all 0.3s ease-in-out;
   
 }
 
@@ -793,6 +798,7 @@ nav li a {
 
 .activity-card {
   margin: 0.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 
