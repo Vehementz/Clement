@@ -372,12 +372,23 @@ nav li a {
 }
 
 
-@media (max-width: 1250px) {
+@media (max-width: 2150px) {
+
+  section#lodgement {
+    margin: auto;
+    width: 99%;
+  }
 
   .wrap-section {
-    grid-template-columns: 98%;
+    grid-template-columns: 99%;
     justify-content: center;
   }
+
+  section.popularity-section {
+    width: 98%;
+    margin: 3rem auto 3rem auto;
+  }
+
 
 }
 
@@ -853,6 +864,17 @@ nav li a {
 
 
 /* activity media queries */ 
+
+@media (max-width: 1384px) {
+  .activity-wrap {
+
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(8, 3rem);
+  
+   }
+
+
+}
 
 
 @media (max-width: 800px) {
