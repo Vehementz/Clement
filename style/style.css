@@ -368,7 +368,7 @@ nav li a {
   grid-template-columns: 62% 35%;
   grid-row: 1;
   justify-content: space-between;
-  min-height: 60rem;
+  min-height: 70rem;
 }
 
 
@@ -417,7 +417,7 @@ nav li a {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: repeat(2, 40%);
-  height: 54rem;
+  height: 65rem;
   column-gap: 2rem;
   row-gap: 2rem;
   align-content: space-between;
@@ -444,7 +444,7 @@ nav li a {
 
 .lodgement img {
   width: 98%;
-  height: 15rem;
+  height: 18rem;
   margin: 0.3rem 0.3rem 0 0.3rem;
   border-radius: 20px 20px 0 0;
   text-align: center;
@@ -483,7 +483,7 @@ nav li a {
 
 .lodgement-stars {
   font-size: 1.1rem;
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 1rem 0.5rem;
   position: absolute;
   bottom: 0.2rem;
   display: flex;
