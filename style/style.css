@@ -372,36 +372,6 @@ nav li a {
 }
 
 
-@media (max-width: 2150px) {
-
-  section#lodgement {
-    margin: auto;
-    width: 99%;
-  }
-
-  .wrap-section {
-    grid-template-columns: 99%;
-    justify-content: center;
-  }
-
-  section.popularity-section {
-    width: 98%;
-    margin: 3rem auto 3rem auto;
-  }
-
-
-}
-
-
-@media (max-width: 380px) {
-
-  .wrap-section {
-    grid-template-columns: 98%;
-    justify-content: center;
-  }
-
-}
-
 
 /* End Wrap of "hebegerments à marseille" and "les plus populaires" section */ 
 
@@ -504,11 +474,21 @@ nav li a {
 .lodgement-more {
   font-size: 1.8rem;
   color: black;
-  margin: 1rem 3rem;
+  margin: 1rem 1rem;
   flex-basis: 100%;
 }
 
 
+
+
+@media (max-width: 380px) {
+
+  .wrap-section {
+    grid-template-columns: 98%;
+    justify-content: center;
+  }
+
+}
 
 
 /* lodgement media queries */ 
@@ -658,7 +638,6 @@ nav li a {
   position: relative;
   justify-content: center;
   height: 85%;
-  margin-top: 1.5rem;
 }
 
 .popularity-lodgement {
@@ -708,7 +687,7 @@ nav li a {
 }
 
 .popularity-stars {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   position: absolute;
   bottom: 0.5rem;
 }
@@ -1077,3 +1056,61 @@ footer a {
 
 
 /* End Footer */ 
+
+
+
+
+
+@media (max-width: 2150px) {
+
+
+
+
+  section#lodgement {
+    margin: auto;
+    width: 99%;
+  }
+
+  .popularity-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    height: 85%;
+    margin: 1.5rem 0 1.5rem 2rem;
+  }
+
+  .wrap-section {
+    grid-template-columns: 99%;
+    justify-content: center;
+  }
+
+  .popularity-lodgement {
+    min-height: 18rem;
+    max-height: 18rem;
+    width: 30%; 
+    margin: 2rem 2rem;
+  }
+
+
+  .lodgement-title {
+    font-size: 1.8rem;
+    margin: 1rem 0 2rem 4%;
+  }
+
+  section.popularity-section {
+    width: 99%;
+    margin: 3rem 1rem 3rem 1rem;
+  }
+  
+  .popularity-stars {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+  
+
+
+}
+
+}
