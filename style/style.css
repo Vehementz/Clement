@@ -389,7 +389,7 @@ nav li a {
 
 .lodgement {
   max-height: 26rem;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: white;
   box-shadow: 0 0 10px 1px gray;
   position: relative;
@@ -403,10 +403,10 @@ nav li a {
 }
 
 .lodgement img {
-  width: 98%;
+  width: 98.5%;
   height: 70%;
   margin: 0.3rem 0.3rem 0 0.3rem;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
   text-align: center;
 
 }
@@ -421,6 +421,8 @@ nav li a {
 
 
 .lodgement-description h3 {
+  margin-top: 4px;
+  margin-bottom: 4px;
   font-size: 1.4rem;
 
 }
@@ -480,11 +482,11 @@ nav li a {
   }
 
   .lodgement {
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: white;
     box-shadow: 0 0 10px 1px gray;
     position: relative;
-    max-height: 20rem;
+    max-height: 24rem;
 
   }
 
@@ -493,9 +495,9 @@ nav li a {
   }
 
   .lodgement img {
-    height: 60%;
+    height: 64%;
     margin: 0.3rem 0.3rem 0 0.3rem;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
     text-align: center;
 
   }
@@ -537,10 +539,24 @@ nav li a {
     display: flex;
     flex-basis: 100%;
   }
+
+  
+  .activity-wrap {
+    grid-template-rows: repeat(8, 1rem)!important;
+  }
+
+
 }
 
 
 
+@media (max-width: 1500px) {
+
+  .activity-wrap {
+    grid-template-rows: repeat(8, 2rem)!important;
+  }
+
+}
 
 
 
@@ -567,6 +583,15 @@ nav li a {
     width: 98.5%;
   }
 
+
+
+  .activity-wrap {
+    grid-template-rows: repeat(8, 1rem)!important;
+  }
+
+
+
+
 }
 
 
@@ -591,6 +616,18 @@ nav li a {
 
   .lodgement-more {
     margin-left: 0rem;
+  }
+
+
+  .activity-wrap {
+    /* grid-template-rows: repeat(3, 8rem)!important; */
+    /* grid-template-rows: repeat(3, 20rem) !important; */
+    grid-template-rows: repeat(2, 13rem) !important;
+    padding-bottom: 6rem;
+  }
+
+  .activity-card img {
+    min-height: 8rem;
   }
 
 }
@@ -626,7 +663,7 @@ nav li a {
   }
 
   .lodgement img {
-    width: 99%;
+    width: 98.5%;
   }
 
   .lodgement-description {
@@ -823,11 +860,13 @@ nav li a {
 
   display: grid;
   grid-template-columns: repeat(4, 23%);
-  grid-template-rows: repeat(8, 2rem);
+  grid-template-rows: repeat(8, 3rem);
   margin: 1rem 2rem;
   grid-column-gap: 2rem;
-  grid-row-gap: 3rem;
+  grid-row-gap: 5rem;
   justify-content: space-between;
+  padding-bottom: 6rem;
+
 }
 
 
@@ -851,7 +890,7 @@ nav li a {
 }
 
 .activity-card h3 {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   border-radius: 0 0 15px 15px;
   padding: 1rem 0 1rem 1rem;
   box-shadow: 0 0 20px #0000002e;
@@ -974,7 +1013,8 @@ nav li a {
 
   .activity-wrap {
     grid-template-columns: repeat(1, 106%);
-    grid-template-rows: repeat(6, 19rem);
+    /* grid-template-rows: repeat(6, 26rem); */
+    grid-template-rows: repeat(6, 32rem);
     grid-row-gap: 4rem;
     justify-content: center;
   }
@@ -1023,7 +1063,6 @@ nav li a {
 /* Footer */
 
 footer {
-  margin-top: 7rem;
   background: #F2F2F2;
   height: 100%;
   padding-bottom: 3rem;
