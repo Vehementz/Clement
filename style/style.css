@@ -12,15 +12,12 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-
 
 header {
   display: flex;
   justify-content: space-between;
-
-
 }
 
 .logo {
@@ -28,13 +25,10 @@ header {
   margin: 2rem 0 2rem 3rem;
 }
 
-
-
 nav ul {
   display: flex;
   flex-wrap: wrap-reverse;
   flex-direction: row;
-
 }
 
 nav li {
@@ -42,14 +36,13 @@ nav li {
 }
 
 nav li a {
-  color: #0065FC;
+  color: #0065fc;
   font-size: 1.2rem;
 }
 
 #subscription-bold {
   font-weight: bold;
 }
-
 
 #activity-grey a {
   color: #000;
@@ -63,35 +56,23 @@ nav li a {
   border-top-color: #0065fc;
 }
 
-
-
 @media (max-width: 750px) {
-
-
   .logo {
     margin: 1rem 3rem;
   }
-
-
 }
 
 @media (max-width: 650px) {
-
   .logo {
     margin: 1rem 3rem;
   }
-
 
   nav li {
     padding: 2rem 1rem;
   }
-
 }
 
-
 @media (max-width: 570px) {
-
-
   .logo {
     height: 4rem;
     width: auto;
@@ -103,30 +84,24 @@ nav li a {
     padding-top: 0;
   }
 
-
-
-
   #subscription-bold {
     padding: 0;
     margin: -3.5rem 0 0 0;
     position: relative;
     left: 75%;
-
   }
 
   #activity-grey {
     border-bottom: 2px solid gray;
     flex: 1 0 50%;
     text-align: center;
-
   }
 
   #border-blue {
     border-top: none;
-    border-bottom: 2px solid #0065FC;
+    border-bottom: 2px solid #0065fc;
     flex: 1 0 50%;
     text-align: center;
-
   }
 
   header {
@@ -136,10 +111,7 @@ nav li a {
   nav li {
     padding: 1rem 1rem;
   }
-
-
 }
-
 
 /*Search section*/
 
@@ -163,14 +135,12 @@ nav li a {
   margin: 1rem 0rem;
 }
 
-
 .btn-localisation {
   position: relative;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 3rem;
   border-radius: 10px 0 0 10px;
-
 }
 
 .fa-map-marker-alt {
@@ -178,33 +148,27 @@ nav li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .input {
-  border: 0.1px solid #F2F2F2;
+  border: 0.1px solid #f2f2f2;
   border-left: none;
   width: 13rem;
   color: black;
-
-
 }
-
 
 .btn-search {
   position: relative;
   border-radius: 0 10px 10px 0;
   border: none;
-  background-color: #0065FC;
+  background-color: #0065fc;
   color: white;
   padding: 10px;
-
 }
 
 .btn-search:hover {
   cursor: pointer;
 }
-
 
 /* Filters */
 
@@ -229,7 +193,6 @@ nav li a {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-
 }
 
 .btn span {
@@ -237,14 +200,14 @@ nav li a {
 }
 
 .btn:hover span {
-  text-decoration: #0065FC;
+  text-decoration: #0065fc;
 }
 
 .btn i {
-  background-color: #DEEBFF;
+  background-color: #deebff;
   border-radius: 50%;
   border: 1px solid transparent;
-  color: #0065FC;
+  color: #0065fc;
   font-size: 12px;
   margin: -2px;
   padding: 12px;
@@ -262,11 +225,10 @@ nav li a {
   height: 4rem;
   margin-bottom: 1rem;
   font-size: 1.3rem;
-
 }
 
 .btn:hover {
-  background-color: #DEEBFF;
+  background-color: #deebff;
   color: black;
   border: 2px solid transparent;
 }
@@ -275,15 +237,11 @@ nav li a {
   visibility: collapse;
 }
 
-
 .filter-title {
   margin: 1rem 1rem 1rem 0;
 }
 
-
-
 @media (max-width: 768px) {
-
   .filters {
     display: inline;
   }
@@ -298,7 +256,6 @@ nav li a {
     width: 20rem;
     padding-left: 2rem;
   }
-
 }
 
 /* Infos */
@@ -310,12 +267,10 @@ nav li a {
 
 .fa-info-circle {
   color: white;
-  background-color: #0065FC;
+  background-color: #0065fc;
   border-radius: 50%;
   margin-right: 1rem;
 }
-
-
 
 @media (max-width: 380px) {
   .fa-search {
@@ -323,7 +278,7 @@ nav li a {
     position: relative;
     border-radius: 8px 8px 8px 8px;
     border: none;
-    background-color: #0065FC;
+    background-color: #0065fc;
     color: white;
     padding: 10px;
     margin-left: -1rem;
@@ -336,13 +291,11 @@ nav li a {
   .btn-localisation {
     width: 3rem;
     flex-shrink: 0;
-
   }
 
   .description-filters i {
     margin-left: 0;
   }
-
 }
 
 /* Lodgement and popularity section */
@@ -351,24 +304,17 @@ nav li a {
   grid-template-columns: 62% 35%;
   grid-row: 1;
   justify-content: space-between;
-
-
 }
-
-
 
 /* Lodgement section */
 
 .lodgement-section {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 20px;
   position: relative;
   margin-left: 3rem;
   height: auto;
-
 }
-
-
 
 .lodgement-title {
   font-size: 1.8rem;
@@ -393,9 +339,6 @@ nav li a {
   background-color: white;
   box-shadow: 0 0 10px 1px gray;
   position: relative;
-
-
-
 }
 
 .lodgement:hover {
@@ -408,9 +351,7 @@ nav li a {
   margin: 0.3rem 0.3rem 0 0.3rem;
   border-radius: 10px 10px 0 0;
   text-align: center;
-
 }
-
 
 .lodgement-description {
   margin: 0.1rem 0.6rem;
@@ -419,12 +360,10 @@ nav li a {
   flex-wrap: nowrap;
 }
 
-
 .lodgement-description h3 {
   margin-top: 4px;
   margin-bottom: 4px;
   font-size: 1.4rem;
-
 }
 
 .lodgement-price {
@@ -433,14 +372,12 @@ nav li a {
 }
 
 .lodgement .fas {
-  color: #0065FC;
-
+  color: #0065fc;
 }
 
 .lodgement .far {
   color: grey;
 }
-
 
 .lodgement-stars {
   font-size: 0.8rem;
@@ -459,12 +396,7 @@ nav li a {
   flex-basis: 100%;
 }
 
-
-
-
 /* lodgement media queries */
-
-
 
 @media (max-width: 1800px) {
   .lodgement-wrap {
@@ -477,8 +409,6 @@ nav li a {
     row-gap: 2rem;
     align-content: space-between;
     justify-content: center;
-
-
   }
 
   .lodgement {
@@ -487,7 +417,6 @@ nav li a {
     box-shadow: 0 0 10px 1px gray;
     position: relative;
     max-height: 24rem;
-
   }
 
   .lodgement:hover {
@@ -499,9 +428,7 @@ nav li a {
     margin: 0.3rem 0.3rem 0 0.3rem;
     border-radius: 10px 10px 0 0;
     text-align: center;
-
   }
-
 
   .lodgement-description {
     margin: 0.1rem 0 0.1rem 1rem;
@@ -510,11 +437,9 @@ nav li a {
     flex-wrap: nowrap;
   }
 
-
   .lodgement-description h3 {
     margin-top: 5px;
     font-size: 1.4rem;
-
   }
 
   .lodgement-price {
@@ -523,14 +448,12 @@ nav li a {
   }
 
   .lodgement .fas {
-    color: #0065FC;
-
+    color: #0065fc;
   }
 
   .lodgement .far {
     color: grey;
   }
-
 
   .lodgement-stars {
     font-size: 0.8rem;
@@ -540,28 +463,18 @@ nav li a {
     flex-basis: 100%;
   }
 
-  
   .activity-wrap {
-    grid-template-rows: repeat(8, 1rem)!important;
+    grid-template-rows: repeat(8, 1rem) !important;
   }
-
-
 }
-
-
 
 @media (max-width: 1500px) {
-
   .activity-wrap {
-    grid-template-rows: repeat(8, 2rem)!important;
+    grid-template-rows: repeat(8, 2rem) !important;
   }
-
 }
 
-
-
 @media (max-width: 1250px) {
-
   .lodgement-wrap {
     grid-area: 2 / 1 / 3 / 2;
     width: 100%;
@@ -583,21 +496,12 @@ nav li a {
     width: 98.5%;
   }
 
-
-
   .activity-wrap {
-    grid-template-rows: repeat(8, 1rem)!important;
+    grid-template-rows: repeat(8, 1rem) !important;
   }
-
-
-
-
 }
 
-
-
 @media (max-width: 850px) {
-
   .lodgement-section {
     height: auto;
   }
@@ -605,7 +509,6 @@ nav li a {
   .lodgement-title {
     margin: 4rem 0rem 3rem 4rem;
   }
-
 
   .lodgement-wrap {
     grid-template-columns: repeat(2, 45%);
@@ -618,7 +521,6 @@ nav li a {
     margin-left: 0rem;
   }
 
-
   .activity-wrap {
     /* grid-template-rows: repeat(3, 8rem)!important; */
     /* grid-template-rows: repeat(3, 20rem) !important; */
@@ -629,14 +531,9 @@ nav li a {
   .activity-card img {
     min-height: 8rem;
   }
-
 }
 
-
-
 @media (max-width: 576px) {
-
-
   .lodgement-section {
     min-height: auto;
 
@@ -647,13 +544,10 @@ nav li a {
     margin: 4rem 0rem 3rem 2rem;
   }
 
-
   .lodgement-wrap {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(6, 40%);
     margin-left: 1rem;
-
-
   }
 
   .lodgement {
@@ -673,16 +567,12 @@ nav li a {
   .lodgement-more {
     margin-left: 1rem;
   }
-
-
-
 }
-
 
 /* Popularity  lodgement section */
 
 .popularity-section {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 20px;
   position: relative;
   margin-right: 2rem;
@@ -712,34 +602,27 @@ nav li a {
   justify-content: center;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
-  height: 92%;
+  height: 88%;
   display: grid;
-
 }
 
 .popularity-wrap {
   display: flex;
-
 }
-
-
 
 .popularity-lodgement {
   display: flex;
   border-radius: 10px;
   width: 85%;
-  height: 95%;
-  height: 15rem;
+  height: 18rem;
   margin: 0.8rem auto;
   background-color: white;
   box-shadow: 0 0 10px 1px gray;
   position: relative;
-
 }
 
 .popularity-lodgement a {
   display: flex;
-
 }
 
 .popularity-lodgement:hover {
@@ -749,7 +632,8 @@ nav li a {
 .popularity-lodgement img {
   display: flex;
   order: 0;
-  width: 14rem;
+
+  width: 22rem;
   height: auto;
   border-radius: 10px 0 0 10px;
   justify-content: center;
@@ -764,20 +648,23 @@ nav li a {
   margin-left: 0.2rem;
 }
 
+.popularity-description * {
+  margin-bottom: 0.2rem;
+}
+
 .popularity-description h3 {
   font-size: 1.3rem;
   margin-top: 0.8rem;
 }
 
 .popularity-stars {
+  position: relative;
   font-size: 0.8rem;
-  position: absolute;
-  bottom: 0.5rem;
+  top: 0.2rem;
 }
 
 .popularity-stars .fas {
-  color: #0065FC;
-
+  color: #0065fc;
 }
 
 .popularity-stars .far {
@@ -786,21 +673,17 @@ nav li a {
 
 /* Popularity media queries */
 
-
 @media (max-width: 1250px) {
-
   .wrap-section {
     grid-template-columns: 100%;
     justify-content: center;
   }
-
 
   .popularity-section {
     width: 100%;
     height: 100%;
     grid-area: 1 / 1 / 2 / 2;
     border-radius: 0;
-
   }
 
   .popularity-wrap {
@@ -814,18 +697,19 @@ nav li a {
   .popularity-lodgement {
     height: 12rem;
     width: 30%;
-
   }
+
 
   .popularity-lodgement img {
-    height: 97%;
+    width: 16rem;
   }
 
+  /* .popularity-lodgement img {
+    height: 97%;
+  } */
 }
 
-
 @media (max-width: 850px) {
-
   .popularity-wrap {
     flex-direction: column;
   }
@@ -835,19 +719,15 @@ nav li a {
     box-shadow: none;
     align-content: center;
   }
+
 }
 
-
-
 @media (max-width: 576px) {
-
   .popularity-title {
     font-size: 1.8rem;
     margin: 2rem 0 1rem 2rem;
   }
-
 }
-
 
 /* Activity */
 
@@ -857,7 +737,6 @@ nav li a {
 }
 
 .activity-wrap {
-
   display: grid;
   grid-template-columns: repeat(4, 23%);
   grid-template-rows: repeat(8, 3rem);
@@ -866,14 +745,11 @@ nav li a {
   grid-row-gap: 5rem;
   justify-content: space-between;
   padding-bottom: 6rem;
-
 }
-
 
 .activity-card {
   margin: 0.5rem;
 }
-
 
 .activity-card img {
   border-top-left-radius: 15px;
@@ -881,9 +757,7 @@ nav li a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
-
 
 .activity-card:hover {
   transform: scale(1.05);
@@ -897,15 +771,12 @@ nav li a {
   margin: -0.3rem 0 0 0;
 }
 
-
-
 .card-1 {
   grid-area: 1 / 1 / 9 / 2;
 }
 
 .card-2 {
   grid-area: 1 / 2 / 6 / 3;
-
 }
 
 .card-3 {
@@ -914,7 +785,6 @@ nav li a {
 
 .card-4 {
   grid-area: 1 / 3 / 9 / 4;
-
 }
 
 .card-5 {
@@ -925,17 +795,12 @@ nav li a {
   grid-area: 5 / 4 / 9 / 5;
 }
 
-
 /* activity media queries */
 
-
 @media (max-width: 800px) {
-
   .activity-wrap {
-
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(2, 12rem);
-
   }
 
   .card-1 {
@@ -944,7 +809,6 @@ nav li a {
 
   .card-2 {
     grid-area: 1 / 2 / 2 / 3;
-
   }
 
   .card-3 {
@@ -953,7 +817,6 @@ nav li a {
 
   .card-4 {
     grid-area: 2 / 1 / 3 / 2;
-
   }
 
   .card-5 {
@@ -963,15 +826,9 @@ nav li a {
   .card-6 {
     grid-area: 2 / 3 / 3 / 3;
   }
-
-
-
 }
 
-
-
 @media (max-width: 630px) {
-
   .activity-wrap {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 12rem);
@@ -984,7 +841,6 @@ nav li a {
 
   .card-2 {
     grid-area: 1 / 2 / 2 / 3;
-
   }
 
   .card-3 {
@@ -993,7 +849,6 @@ nav li a {
 
   .card-4 {
     grid-area: 2 / 2 / 3 / 3;
-
   }
 
   .card-5 {
@@ -1003,14 +858,9 @@ nav li a {
   .card-6 {
     grid-area: 3 / 2 / 4 / 3;
   }
-
-
 }
 
-
-
 @media (max-width: 576px) {
-
   .activity-wrap {
     grid-template-columns: repeat(1, 106%);
     /* grid-template-rows: repeat(6, 26rem); */
@@ -1030,7 +880,6 @@ nav li a {
 
   .card-2 {
     grid-area: 2 / 1 / 3 / 2;
-
   }
 
   .card-3 {
@@ -1039,7 +888,6 @@ nav li a {
 
   .card-4 {
     grid-area: 4 / 1 / 5 / 2;
-
   }
 
   .card-5 {
@@ -1049,21 +897,12 @@ nav li a {
   .card-6 {
     grid-area: 6 / 1 / 7 / 2;
   }
-
 }
-
-
-
-
-
-
-
-
 
 /* Footer */
 
 footer {
-  background: #F2F2F2;
+  background: #f2f2f2;
   height: 100%;
   padding-bottom: 3rem;
 }
@@ -1075,16 +914,11 @@ footer {
   margin: 0rem 0;
   color: black;
   position: relative;
-
-
 }
 
 .footer-bloc {
   margin-top: 2.5rem;
   width: 30%;
-
-
-
 }
 
 footer h2 {
@@ -1098,12 +932,9 @@ footer h2 {
   white-space: nowrap;
 }
 
-
-
 .list li:hover {
   text-decoration: underline;
 }
-
 
 @media (max-width: 770px) {
   .contenu-footer {
@@ -1114,19 +945,15 @@ footer h2 {
   }
 }
 
-
 @media (max-width: 576px) {
   .contenu-footer {
     flex-direction: column;
     margin-left: 2%;
   }
-
 }
-
 
 @media (max-width: 380px) {
   .contenu-footer {
     margin-left: 4%;
   }
-
 }
