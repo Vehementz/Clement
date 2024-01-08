@@ -545,7 +545,7 @@ nav li a {
 
   .lodgement-wrap {
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(6, 40%);
+    grid-template-rows: repeat(6, 15%);
     margin-left: 1rem;
   }
 
