@@ -393,7 +393,7 @@ nav li a {
 .lodgement-more {
   font-size: 1.8rem;
   color: black;
-  margin: 1rem 3rem 2rem 3rem;
+  margin: 1rem 3rem 2rem 0.7rem;
   flex-basis: 100%;
 }
 
@@ -407,7 +407,7 @@ nav li a {
     grid-template-rows: repeat(2, 40%);
     height: auto;
     column-gap: 2rem;
-    row-gap: 2rem;
+    row-gap: 4rem;
     align-content: space-between;
     justify-content: center;
   }
@@ -491,6 +491,11 @@ nav li a {
     border-radius: 0;
   }
 
+  .lodgement-more {
+    margin: 0rem 3rem 2rem 0.7rem;
+  }
+  
+
   .lodgement-title {
     margin: 4rem 0 3rem 3rem;
   }
@@ -566,7 +571,7 @@ nav li a {
   }
 
   .lodgement-more {
-    margin-left: 1rem;
+    margin-left: 0rem;
   }
 }
 
@@ -634,7 +639,6 @@ nav li a {
 .popularity-lodgement img {
   display: flex;
   order: 0;
-
   width: 22rem;
   height: auto;
   border-radius: 10px 0 0 10px;
@@ -865,21 +869,28 @@ nav li a {
 }
 
 @media (max-width: 576px) {
+
+  .lodgement {
+    max-height: 32rem;
+  }
+  
+
   .activity-wrap {
     grid-template-columns: repeat(1, 98%);
     grid-template-rows: repeat(6, 32rem);
-    grid-row-gap: 4rem;
+    grid-row-gap: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
+    width: 94%;
 
   }
 
   .marseille-title {
     font-size: 1.8rem;
-    margin: 3rem 0 1rem -1.5rem;
+    margin: 3rem 0 1rem -0.5rem;
   }
 
   .card-1 {
